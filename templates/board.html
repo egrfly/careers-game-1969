@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Careers</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
+    <meta property="og:title" content="Careers">
+    <meta property="og:description" content="Online version of the classic board game">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://careers.emilyflynn.co.uk">
+    <meta property="og:image" content="{{ url_for('static', filename='images/android-chrome-512x512.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fira-sans.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tippy-animations-scale.css') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='data/site.webmanifest') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="board">
+        <div class="top-row">
+          <div class="corner-square allow-multiple">
+            <div class="square-header">Park bench</div>
+            <div class="square-body">
+              <p>You are unemployed and must throw 7, 11 or a double to move on.</p>
+              You may <strong>not</strong> use Opportunity or Experience cards, but you <strong>may</strong> spend &half;&nbsp;your cash-on-hand on a new suit of clothes before any throw and go on that throw.
+            </div>
+          </div>
+          <div class="outside-square orange first">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="outside-square pink">
+            <div class="square-header">Pay rent here</div>
+            <div class="square-body">
+              Pay &half; your annual salary to cover this year's housing costs. 
+              <strong>Must</strong> be paid in cash.
+            </div>
+          </div>
+          <div class="outside-square white">
+            <div class="square-header">May enter politics</div>
+            <div class="square-body">
+              Must have:<br>
+              &para; Law degree; or<br>
+              &para; Political experience;<br>
+              &ensp; or pay:<br>
+              &para; &pound;3,000 to party funds.
+            </div>
+          </div>
+          <div class="outside-square orange">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="outside-square pink">
+            <div class="square-header">Shopping spree</div>
+            <div class="square-body">
+              Throw <strong>one</strong> dice to find out what you have spent.
+              Pay number thrown times 10% of your cash-in-hand.
+            </div>
+          </div>
+          <div class="outside-square white">
+            <div class="square-header">May enter Hollywood</div>
+            <div class="square-body">
+              Must have:<br>
+              &para; Film experience;<br>
+              &ensp; or pay:<br>
+              &para; &pound;1,000 for new clothes.
+            </div>
+          </div>
+          <div class="outside-square orange">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="corner-square">
+            <div class="square-header">Bermuda vacation</div>
+            <div class="square-body">
+              <p>Score <span class="heart white-bg">4&nbsp;&hearts;s</span> when you land here<br>and <span class="heart white-bg">2&nbsp;&hearts;s</span> each time you stay.</p>
+              <strong>May</strong> stay on throws of 7 or less, but you may leave on any throw.
+            </div>
+          </div>
+        </div>
+        <div class="middle-row">
+          <div class="left-column">
+            <div class="outside-square orange first">
+              <div class="square-header">Opportunity<br>knocks</div>
+            </div>
+            <div class="outside-square white">
+              <div class="square-header">May go to sea</div>
+              <div class="square-body">
+                Must have:<br>
+                &para; Sea experience;<br>
+                &ensp; or pay:<br>
+                &para; &pound;100 for navigation course.
+              </div>
+            </div>
+            <div class="outside-square pink">
+              <div class="square-header">Art gallery</div>
+              <div class="square-body">
+                <p>May buy "Old Masters" for &pound;3,000 each. 
+                Throw 1 dice and score <span class="star white-bg singular">1&nbsp;&starf;</span> times the number thrown for each picture bought.</p>
+                Limit: 2 to a customer.
+              </div>
+            </div>
+            <div class="outside-square orange">
+              <div class="square-header">Opportunity<br>knocks</div>
+            </div>
+            <div class="outside-square white">
+              <div class="square-header">May join big business</div>
+              <div class="square-body">
+                Must have:<br>
+                &para; University degree; or<br>
+                &para; Business experience;<br>
+                &ensp; or pay:<br>
+                &para; &pound;500 for business training course.
+              </div>
+            </div>
+            <div class="outside-square pink">
+              <div class="square-header">Pay food bills here</div>
+              <div class="square-body" style="margin-left:-10px;">
+                Pay &frac14; of your cash-on-hand for<br>this year's supply of groceries.
+                If<br>you have no cash, ignore this instruction.
+              </div>
+            </div>
+            <div class="outside-square orange">
+              <div class="square-header">Opportunity<br>knocks</div>
+            </div>
+          </div>
+          <div class="middle-square">
+            <div class="interior-top-row">
+              <div class="track">
+                <div class="track-row shallow">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">
+                      <div class="pad-left curve-left">&nbsp;&nbsp;&nbsp;TERRIFIC</div>
+                      <div class="pad-left">shore leave</div>
+                      in Pango-Pango</div>
+                    <div class="heart right">8&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square inactive"></div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-top-internal bd-right-internal bd-bottom bd-left">
+                    <div class="ellipsis-after">Go beach-combing</div>
+                    <div class="right pad-left">Lose next turn</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Swim in tropical lagoon</div>
+                    <div class="heart right">6&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after">Land at Tahiti</div>
+                    <div class="heart right">4&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="track-label">Going to <span class="large-cap">s</span>ea</div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Find buried treasure</div>
+                    <div>Collect:</div>
+                    <div class="money right raised">&pound;1,000</div>
+                    <div class="right">times throw of one dice</div>
+                  </div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Sea-sick first day out</div>
+                    <div class="right">Go to hospital</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">See sights of Buenos Aires</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Meet famous traveller</div>
+                    <div class="right">Draw 2 Opp'ties</div>
+                  </div>
+                  <div class="interior-square bd-top-internal bd-right bd-bottom">
+                    <div class="ellipsis-after">Bad storm</div>
+                    <div class="right curve-right">Draw 1 Exp. Card</div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="track horizontal-middle">
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Lose in by-election</div>
+                    <div class="right">Go to park bench</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after pad-left curve-left">&nbsp;&nbsp;&nbsp;Win by a landslide</div>
+                    <div class="star right">12&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square inactive"></div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Lunch with royalty</div>
+                    <div class="right">Draw 2 Opp'ties</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-top-internal bd-right-internal bd-bottom bd-left">
+                    <div>Political scandal!</div>
+                    <div class="right ellipsis-before">Lose &half; your fame</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after">Write best-selling political book</div>
+                    <div class="right">
+                      <div class="money">&pound;5,000</div>
+                      <div class="star">4&nbsp;&starf;s</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Oppose crime</div>
+                    <div class="star right">4&nbsp;&starf;s</div>
+                  </div>
+                  <div class="track-label"><span class="large-cap">P</span>olitics</div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Ministerial appoint-ment</div>
+                    <div class="star right">8&nbsp;&starf;s</div>
+                  </div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right-internal bd-bottom bd-left">
+                    <div class="ellipsis-after">Judge beauty contest</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Ring 1,000 doorbells</div>
+                    <div class="right">Draw 2 Exp. Cards</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Sensational maiden speech</div>
+                    <div class="star right">6&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square bd-top-internal bd-right bd-bottom">
+                    <div class="ellipsis-after">Lead official overseas visit</div>
+                    <div class="right">
+                      <div class="star">2&nbsp;&starf;s</div>
+                      <div class="heart curve-right">4&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="track">
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Pose for calendar</div>
+                    <div class="star right">2&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Date with star</div>
+                    <div class="right">Draw 1 Exp. Card</div>
+                  </div>
+                  <div class="track-label top-line"><span class="large-cap">H</span>olly-</div>
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="curve-left">Reach stardom! Salary up:</div>
+                    <div class="money right raised">&pound;1,000</div>
+                    <div class="right">times throw of one dice</div>
+                  </div>
+                  <div class="interior-square narrow bd-top bd-bottom">
+                    <div class="ellipsis-after pad-right">Win<br>Oscar</div>
+                    <div class="star right">12&nbsp;&starf;s</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Director likes you</div>
+                    <div class="right">Draw 2 Opp'ties</div>
+                  </div>
+                  <div class="track-label">wood</div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Scandal</div>
+                    <div class="right">
+                      <div class="star">10&nbsp;&starf;s</div>
+                      <div class="ellipsis-before">but lose <strong>all</strong> your happiness</div>
+                    </div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right-internal bd-bottom bd-left">
+                    <div class="ellipsis-after">Marry foreign princess</div>
+                    <div class="right">
+                      <div class="star">6&nbsp;&starf;s</div>
+                      <div class="heart">2&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Gain TV contract</div>
+                    <div class="right">
+                      <div>Salary up</div>
+                      <div class="money">&pound;1,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top-internal bd-right bd-bottom">
+                    <div class="ellipsis-after">Fan mail drops off slightly</div>
+                    <div class="right curve-right">Salary cut<br>by &half;</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+              </div>
+            </div>
+            <div class="interior-middle-row">
+              <div class="track vertical-middle">
+                <div class="track-row deep">
+                  <div class="interior-square narrow inactive bd-bottom"></div>
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">Too ambitious</div>
+                    <div class="right">Go to park bench</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Gorgeous secretary</div>
+                    <div class="heart right">4&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after">Swing big deal</div>
+                    <div class="right">Draw 1 Exp. Card</div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="interior-square bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Elected to board of directors</div>
+                    <div class="right">
+                      <div>Salary up</div>
+                      <div class="money">&pound;3,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-right bd-bottom">
+                    <div class="ellipsis-after">Business slump</div>
+                    <div class="right curve-right">Cut salary<br>by &half;</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Promotion to front office</div>
+                    <div class="right">
+                      <div>Salary up</div>
+                      <div class="money">&pound;2,000</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="track-label">Big <span class="large-cap">b</span>usiness</div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Invent new production plan</div>
+                    <div class="right">
+                      <div>Collect bonus</div>
+                      <div class="money">&pound;2,000</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Learning business</div>
+                    <div class="right">Draw 1 Exp. Card</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Lunch with boss</div>
+                    <div class="right">Draw 1<br>Opp'ty</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Boss likes you</div>
+                    <div class="right">
+                      <div>Salary up</div>
+                      <div class="money">&pound;1,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top-internal bd-right bd-bottom">
+                    <div class="ellipsis-after">Argue with boss</div>
+                    <div class="right curve-right pad-left">Lose next turn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider wide card-pile-left">
+                <div class="dice-container">
+                  <button class="btn pale roll-dice two-dice">Roll two</button>
+                  <div class="dice {{ dice_state[0]['number'] }}">
+                    <div class="dice-row">
+                      <div class="spot four five six"></div>
+                      <div class="spot two three four five six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot six"></div>
+                      <div class="spot one three five"></div>
+                      <div class="spot six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot two three four five six"></div>
+                      <div class="spot four five six"></div>
+                    </div>
+                  </div>
+                  <div class="dice {{ dice_state[1]['number'] }}">
+                    <div class="dice-row">
+                      <div class="spot four five six"></div>
+                      <div class="spot two three four five six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot six"></div>
+                      <div class="spot one three five"></div>
+                      <div class="spot six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot two three four five six"></div>
+                      <div class="spot four five six"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-piles">
+                <div class="card-pile orange">
+                  <div class="card-pile-header">Opportunity Cards</div>
+                  <div>(<span class="remaining-cards">28</span> left)</div>
+                  <button class="btn pale draw-card">Draw new card</button>
+                </div>
+                <div class="card-pile pink">
+                  <div class="card-pile-header">Experience Cards</div>
+                  <div>(<span class="remaining-cards">28</span> left)</div>
+                  <button class="btn pale draw-card">Draw new card</button>
+                </div>
+              </div>
+              <div class="divider wide">
+                <div class="dice-container">
+                  <button class="btn pale roll-dice one-dice">Roll one</button>
+                  <div class="dice {{ dice_state[2]['number'] }}">
+                    <div class="dice-row">
+                      <div class="spot four five six"></div>
+                      <div class="spot two three four five six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot six"></div>
+                      <div class="spot one three five"></div>
+                      <div class="spot six"></div>
+                    </div>
+                    <div class="dice-row">
+                      <div class="spot two three four five six"></div>
+                      <div class="spot four five six"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="track vertical-middle">
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">See rare butterfly</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Lose &half; your gear</div>
+                    <div class="right">Spend &pound;2,000 more or go to park bench</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Fast burro</div>
+                    <div class="right">Throw again</div>
+                  </div>
+                  <div class="interior-square narrow bd-top bd-bottom">
+                    <div class="ellipsis-after">Scenery is beautiful</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Pick &amp; shovel work</div>
+                    <div class="right">Draw 2 Exp. Cards</div>
+                  </div>
+                  <div class="track-label"><span class="large-cap">U</span>ranium prospecting</div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Breathtaking view of the Andes</div>
+                    <div class="heart right">4&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square narrow inactive bd-bottom"></div>
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">Climb famous peak</div>
+                    <div class="heart right">6&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square narrow bd-top bd-bottom">
+                    <div class="ellipsis-after pad-right">Find rich uranium ore</div>
+                    <div class="right">
+                      <div>Collect</div>
+                      <div class="money">&pound;20,000</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="interior-square wide bd-right-internal bd-bottom bd-left">
+                    <div class="ellipsis-after">Fall off cliff</div>
+                    <div class="right pad-left">Go to hospital</div>
+                  </div>
+                  <div class="interior-square bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Find small lode of precious stones</div>
+                    <div class="right">
+                      <div>Collect</div>
+                      <div class="money">&pound;10,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-right bd-bottom">
+                    <div class="ellipsis-after">Find Inca ruins</div>
+                    <div class="right">
+                      <div class="star">2&nbsp;&starf;s</div>
+                      <div class="heart curve-right">4&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+              </div>
+            </div>
+            <div class="interior-bottom-row">
+              <div class="track narrow">
+                <div class="track-row deep">
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Your thesis wins an<br>&nbsp;award</div>
+                    <div class="right pad-left">Draw 2 Opp'ties</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Selected for Olympic games</div>
+                    <div class="star right">6&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after pad-right">Sweetheart has rich uncle</div>
+                    <div class="right">Draw 2 Opp'ties</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="track-label"><span class="large-cap">U</span>niversity</div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Captain the 1st XI team</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">Failed preliminary exams</div>
+                    <div class="right curve-left pad-left">Lose next turn</div>
+                  </div>
+                  <div class="interior-square bd-top-internal bd-right bd-bottom">
+                    <div class="ellipsis-after">Elected president of "The Union"</div>
+                    <div class="heart right curve-right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Fall in love</div>
+                    <div class="heart right">4&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="track narrow horizontal-middle">
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">Mare has twin colts</div>
+                    <div class="heart right">6&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Raise prize bull</div>
+                    <div class="right">
+                      <div class="star">2&nbsp;&starf;s</div>
+                      <div class="heart">4&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after">Gamble in corn</div>
+                    <div>Collect:</div>
+                    <div class="right">
+                      <div class="money raised">&pound;1,000</div>
+                      <div>times throw of one dice</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="interior-square wide bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Bumper crop</div>
+                    <div class="right">
+                      <div>Collect</div>
+                      <div class="money">&pound;5,000</div>
+                    </div>
+                  </div>
+                  <div class="track-label"><span class="large-cap">F</span>arming</div>
+                  <div class="interior-square wide bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Good fishing</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row">
+                  <div class="interior-square wide bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Splendid autumn colours</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-bottom-internal bd-left">
+                    <div class="ellipsis-after">Work with threshing crew</div>
+                    <div class="right">Draw 1 Exp. Card</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Hailstorm</div>
+                    <div class="right pad-right curve-right">Lose &half; your cash&nbsp;&nbsp;&nbsp;</div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Beautiful spring weather</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="track wide">
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top bd-right-internal bd-bottom-internal bd-left">
+                    <div class="ellipsis-after curve-left">Promotion for bravery</div>
+                    <div class="right">
+                      <div>Salary up</div>
+                      <div class="money">&pound;2,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Rescue steward from jammed airlock</div>
+                    <div class="right raised">
+                      <div class="star raised">2&nbsp;&starf;s</div>
+                      <div class="heart">4&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Ship explodes</div>
+                    <div class="right">Lose <strong>all</strong> your cash</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Lose your nerve</div>
+                    <div class="right pad-left">&amp; <strong>all</strong> your fame</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Successful take-off</div>
+                    <div class="star right">6&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square narrow bd-top bd-bottom">
+                    <div class="ellipsis-after">Ship is beautiful</div>
+                    <div class="heart right">2&nbsp;&hearts;s</div>
+                  </div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Crash landing</div>
+                    <div class="right">Draw 2 Exp. Cards</div>
+                  </div>
+                  <div class="track-label">Expedition to the <span class="large-cap">m</span>oon</div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+                <div class="track-row deep">
+                  <div class="interior-square wide bd-top-internal bd-right-internal bd-bottom bd-left">
+                    <div class="ellipsis-after"><strong>You</strong> are the first human to land on the moon</div>
+                    <div class="star right">16&nbsp;&starf;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Learn the secret of moonshine</div>
+                    <div class="heart right">10&nbsp;&hearts;s</div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Find gold dust in moon crater</div>
+                    <div class="right">
+                      <div>Collect</div>
+                      <div class="money">&pound;10,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right-internal bd-bottom">
+                    <div class="ellipsis-after">Jump over mountain</div>
+                    <div>
+                      <div class="star right">10&nbsp;&starf;s</div>
+                      <div>but go to hospital</div>
+                    </div>
+                  </div>
+                  <div class="interior-square bd-top bd-right bd-bottom-internal">
+                    <div class="ellipsis-after">Successful landing</div>
+                    <div class="right">
+                      <div class="star">6&nbsp;&starf;s</div>
+                      <div class="heart">4&nbsp;&hearts;s</div>
+                    </div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+                <div class="track-row shallow">
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square inactive"></div>
+                  <div class="interior-square wide bd-right bd-left">
+                    <div class="ellipsis-after">Sell moon relic to museum</div>
+                    <div class="right pad-right">
+                      <div>Collect</div>
+                      <div class="money pad-right curve-right">&pound;5,000</div>
+                    </div>
+                  </div>
+                  <div class="interior-square narrow inactive"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="outside-square orange first">
+              <div class="square-header">Opportunity<br>knocks</div>
+            </div>
+            <div class="outside-square pink">
+              <div class="square-header">Stock market</div>
+              <div class="square-body">
+                <p>My buy blocks of stock for &pound;3,000 each. Throw 1 dice and sell out for <span class="money white-bg">&pound;1,000</span> times the number thrown. Throw once for each block bought.</p>
+                No limit on purchases.
+              </div>
+            </div>
+            <div class="outside-square white">
+              <div class="square-header">May go prospecting</div>
+              <div class="square-body">
+                Must have:<br>
+                &para; Engineering degree; or<br>
+                &para; Prospecting experience;<br>
+                &ensp; or pay:<br>
+                &para; &pound;4,000 for equipment.
+              </div>
+            </div>
+            <div class="outside-square orange">
+              <div class="square-header">Opportunity<br>knocks</div>
+            </div>
+            <div class="outside-square pink">
+              <div class="square-header">Yacht harbour</div>
+              <div class="square-body">
+                <p class="center table-descriptor">May buy a yacht.<br>Score <span class="heart">&hearts;s</span> as follows:</p>
+                <table>
+                  <tr><td colspan="2" class="center">Pay</td><td></td><td class="center">Score</td></tr>
+                  <tr><td>&pound;</td><td class="right">2,000</td><td class="spaced">&nbsp............</td><td class="heart right">4 &hearts;s</td></tr>
+                  <tr><td>&pound;</td><td class="right">8,000</td><td class="spaced">&nbsp............</td><td class="heart right">8 &hearts;s</td></tr>
+                  <tr><td>&pound;</td><td class="right">16,000</td><td class="spaced">&nbsp............</td><td class="heart right">12 &hearts;s</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="outside-square white">
+              <div class="square-header">May join expedition</div>
+              <div class="square-body">
+                Must have:<br>
+                &para; Science degree; or<br>
+                &para; Space experience;<br>
+                &ensp; or pay:<br>
+                &para; &pound;5,000 for contributions to research.
+              </div>
+            </div>
+            <div class="outside-square pink">
+              <div class="square-header">Statue in the park</div>
+              <div class="square-body">
+                <p class="center table-descriptor">May buy statue of self for home town.<br>Score <span class="star">&starf;s</span> as follows:</p>
+                <table>
+                  <tr><td colspan="2" class="center">Pay</td><td></td><td class="center">Score</td></tr>
+                  <tr><td>&pound;</td><td class="right">4,000</td><td class="spaced">&nbsp............</td><td class="star right">4 &starf;s</td></tr>
+                  <tr><td>&pound;</td><td class="right">8,000</td><td class="spaced">&nbsp............</td><td class="star right">10 &starf;s</td></tr>
+                  <tr><td>&pound;</td><td class="right">12,000</td><td class="spaced">&nbsp............</td><td class="star right">16 &starf;s</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="corner-square">
+            <div class="square-header">Hospital</div>
+            <div class="square-body">
+              <p>You are laid up until you throw 5 or less.</p>
+              You may <strong>not</strong> use Opportunity or Experience cards, but you <strong>may</strong> pay doctor (or if no doctor, banker) cash equal to &half; your salary for special treatment before any throw and go on that throw.
+            </div>
+          </div>
+          <div class="outside-square white first">
+            <div class="square-header">May enter university</div>
+              <div class="square-body">
+                Must pay &pound;500 for tuition.<br>
+                May earn degree in:
+                <ul>
+                  <li>Law,</li>
+                  <li>Medicine,</li>
+                  <li>Science, or</li>
+                  <li>Engineering</li>
+                </ul>
+                Graduates who land here must throw again.
+              </div>
+          </div>
+          <div class="outside-square pink">
+            <div class="square-header">Motor show</div>
+              <div class="square-body">
+                May spend up to 1 year's salary for new car. 
+                Score <span class="heart singular">1&nbsp;&hearts;</span> for each &pound;1,000 cash spent. 
+                Lose <span class="heart singular">1&nbsp;&hearts;</span> for just looking. 
+                (Players with no <span class="heart">&hearts;s</span> may "look" for free.)
+              </div>
+          </div>
+          <div class="outside-square orange">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="outside-square white">
+            <div class="square-header">May start farming</div>
+              <div class="square-body">
+                Must have:<br>
+                &para; Farming experience;<br>
+                &ensp; or pay:<br>
+                &para; &pound;1,000 for supplies.
+              </div>
+          </div>
+          <div class="outside-square orange">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="outside-square pink">
+            <div class="square-header">Pay taxes here</div>
+              <div class="square-body">
+                If salary is:<br>
+                &pound;3,000 or less
+                <div class="right raised ellipsis-before">pay 10%</div>
+                <div class="ellipsis-before">of one year's salary.</div>
+                &pound;3,001 to &pound;9,999
+                <div class="right raised ellipsis-before">pay 50%</div>
+                &pound;10,000 or over
+                <div class="right raised ellipsis-before">pay 90%</div>
+                <strong>Must</strong> be paid in cash.
+              </div>
+          </div>
+          <div class="outside-square orange">
+            <div class="square-header">Opportunity<br>knocks</div>
+          </div>
+          <div class="corner-square allow-multiple" id="starting-square">
+            <div class="square-body">
+              Collect salary as you pass
+            </div>
+            <div class="square-header oversized raised">Payday</div>
+            <div class="square-body">
+              <p>Collect <strong>DOUBLE</strong> if you land here</p>
+            </div>
+            <div class="square-header">
+              <svg class="arrow arrow-left arrow-inline squat" height="26" width="10" style="position: static; display: inline; background: transparent; margin: 0 2px -6px 1px;">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              Start here
+              <svg class="arrow arrow-left arrow-inline squat" height="26" width="10" style="position: static; display: inline; background: transparent; margin: 0 2px -6px 1px;">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-area">
+        <div class="blocked-area">
+          <div class="tabs">
+            <div class="side-tab white urgent"><p>Finished a game or about to start one?</p><button class="btn reset urgent">Reset all counters and cards</button></div>
+            <div class="side-tab white"><p>Lost some counters?</p><button class="btn reset">Reset some counters</button></div>
+            <div class="side-tab white"><p>Gone bankrupt?</p><button class="btn reset">Reset your own counter and cards</button></div>
+            <div class="reserved-confirmation-area">
+              <div class="hidden" id="confirmation-box">
+                <div class="reset-question continue-reset">Are you sure you want to <span id="reset-message">reset all counters and cards</span>?</div>
+                <div class="reset-question reset-some reset-own" id="reset-question-followup"></div>
+                <div class="confirmation-box-col">
+                  <button class="btn continue-reset" id="reset-yes">Yes</button>
+                  <button class="btn reset-some" id="reset-all">All</button>
+                  <button class="btn reset-some reset-own counter-colour purple">Purple</button>
+                  <button class="btn reset-some reset-own counter-colour red">Red</button>
+                  <button class="btn reset-some reset-own counter-colour yellow">Yellow</button>
+                </div>
+                <div class="confirmation-box-col">
+                  <button class="btn continue-reset exit-reset">No</button>
+                  <button class="btn reset-some reset-own counter-colour green">Green</button>
+                  <button class="btn reset-some reset-own counter-colour blue">Blue</button>
+                  <button class="btn reset-some reset-own counter-colour black">Black</button>
+                  <button class="btn reset-some exit-reset">Exit</button>
+                </div>
+                <button class="btn reset-own exit-reset">Cancel</button>
+              </div>
+            </div>
+          </div>
+          <div class="opp-exp-cards">
+            <div class="card-row">
+              <div class="card-carousel">
+                <button class="btn arrow left-arrow orange" disabled>&lang;</button>
+                <div class="current-cards">
+                  <div class="current-card orange hidden">
+                    <span class="opp-type">golden opportunity</span> to 
+                    <span class="opp-description ellipsis-after">move to the entrance square of the career of your choice</span>
+                    <span class="req-detail">meet normal requirements</span>.
+                    <button class="btn orange use-card">Use</button>
+                  </div>
+                </div>
+                <button class="btn arrow right-arrow orange" disabled>&rang;</button>
+              </div>
+              <div class="cards-label">Opp. Card 
+                <span class="card-index">0</span> of 
+                <span class="card-count">0</span>
+              </div>
+            </div>
+            <div class="card-row">
+              <div class="card-carousel">
+                <button class="btn arrow left-arrow pink" disabled>&lang;</button>
+                <div class="current-cards">
+                  <div class="current-card pink hidden">
+                    <span class="may-move ellipsis-after">May move</span>
+                    <span class="move-number">4</span> <span class="move-number-squares">square</span>
+                    <div>in place of throwing the dice on any move.</div>
+                    <button class="btn pink use-card">Use</button>
+                  </div>
+                </div>
+                <button class="btn arrow right-arrow pink" disabled>&rang;</button>
+              </div>
+              <div class="cards-label">Exp. Card 
+                <span class="card-index">0</span> of 
+                <span class="card-count">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="arrows">
+            <div class="large-arrows">
+              <svg class="arrow arrow-right arrow-down collect-experience" height="44" width="64" style="left:1001px;top:590.5px">
+                <polygon points="1,7 44,7 44,1 63,22 44,43 44,37 1,37" />
+                <text x="11" y="20" fill="black">Collect</text>
+                <text x="4" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-right arrow-down collect-experience" height="44" width="64" style="left:1001px;top:230.5px">
+                <polygon points="1,7 44,7 44,1 63,22 44,43 44,37 1,37" />
+                <text x="11" y="20" fill="black">Collect</text>
+                <text x="4" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-right arrow-up collect-experience" height="44" width="64" style="left:580.5px;top:148px">
+                <polygon points="1,7 44,7 44,1 63,22 44,43 44,37 1,37" />
+                <text x="11" y="20" fill="black">Collect</text>
+                <text x="4" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-right arrow-up collect-experience" height="44" width="64" style="left:220.5px;top:148px">
+                <polygon points="1,7 44,7 44,1 63,22 44,43 44,37 1,37" />
+                <text x="11" y="20" fill="black">Collect</text>
+                <text x="4" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-left arrow-down collect-experience" height="44" width="64" style="left:918.5px;top:1011px">
+                <polygon points="63,7 20,7 20,1 1,22 20,43 20,37 63,37" />
+                <text x="19" y="20" fill="black">Collect</text>
+                <text x="12" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-left arrow-down collect-experience" height="44" width="64" style="left:438.5px;top:1011px">
+                <polygon points="63,7 20,7 20,1 1,22 20,43 20,37 63,37" />
+                <text x="19" y="20" fill="black">Collect</text>
+                <text x="12" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-left arrow-up collect-experience" height="44" width="64" style="left:138px;top:568px">
+                <polygon points="63,7 20,7 20,1 1,22 20,43 20,37 63,37" />
+                <text x="19" y="20" fill="black">Collect</text>
+                <text x="12" y="30" fill="black">Experience</text>
+              </svg>
+              <svg class="arrow arrow-left arrow-up increase-salary" height="55" width="64" style="left:139px;top:809.5px">
+                <polygon points="63,7 20,7 20,1 1,27.5 20,54 20,48 63,48" />
+                <text x="17" y="21" fill="black">Increase</text>
+                <text x="14" y="31" fill="black">salary by</text>
+                <text x="24" y="41" fill="black">&pound;2000</text>
+              </svg>
+            </div>
+            <div class="small-arrows">
+              <svg class="arrow arrow-left squat" height="26" width="10" style="left:1019.5px;top:798.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-left squat" height="26" width="10" style="left:1019.5px;top:498.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-down squat" height="26" width="10" style="left:506.5px;top:164.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-down squat" height="26" width="10" style="left:806.5px;top:164.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-up squat" height="26" width="10" style="left:266.5px;top:1011.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-up squat" height="26" width="10" style="left:566.5px;top:1011.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-right squat" height="26" width="10" style="left:173px;top:378.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+              <svg class="arrow arrow-right squat" height="26" width="10" style="left:173px;top:678.5px">
+                <polygon points="9,6 6,6 6,3 1,13 6,23 6,20 9,20" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="unused-counters white">
+          {% for counter_info in counters_state %}
+          <div class="counter-space">
+            <div class="counter {{ counter_info['colour'] }} {{ 'held' if counter_info['selected'] else '' }}"
+              style="position: absolute; left: {{ counter_info['left'] - 10 }}px; top: {{ counter_info['top'] - 10 }}px;">
+              <div class="interior"></div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/socket.io.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plain-draggable.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tippy-bundle.umd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/initialize.js') }}"></script>
+  </body>
+</html>
